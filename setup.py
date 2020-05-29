@@ -1,0 +1,20 @@
+setup(
+    name="sr_scraper",
+    version="1.0.0",
+    description="Scrape asset mp4s from SR pages",
+    long_description=README,
+    long_description_content_type="text/markdown",
+    # url="https://github.com/realpython/reader",
+    author="Amal",
+    author_email="amal@collabasia.co",
+    # license="MIT",
+    packages=["modules"],
+    include_package_data=True,
+    install_requires=[
+        "altgraph",
+        "macholib",
+        "selenium",
+        "urllib3",
+    ],
+    entry_points={"console_scripts": ["modules=modules.__main__:main"]},
+)
